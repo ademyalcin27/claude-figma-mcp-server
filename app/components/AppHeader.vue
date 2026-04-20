@@ -6,6 +6,14 @@
       {{ title }}
     </h1>
     <slot />
+    <UButton
+      color="primary"
+      variant="solid"
+      icon="i-heroicons-arrow-right-on-rectangle"
+      @click="handleLogin"
+    >
+      Login
+    </UButton>
   </div>
 </template>
 
@@ -13,4 +21,8 @@
 defineProps<{
   title: string;
 }>();
+
+function handleLogin() {
+  navigateTo("/login");
+}
 </script>
