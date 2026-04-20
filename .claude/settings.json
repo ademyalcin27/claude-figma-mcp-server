@@ -1,0 +1,37 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "./.claude/hooks/remind-run-checks.sh",
+            "timeout": 10
+          },
+          {
+            "type": "command",
+            "command": "./.claude/hooks/guard-no-root-pages.sh",
+            "timeout": 10
+          },
+          {
+            "type": "command",
+            "command": "./.claude/hooks/guard-no-any.sh",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "./.claude/hooks/log-session.sh",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}

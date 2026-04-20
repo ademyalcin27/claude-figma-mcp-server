@@ -1,0 +1,86 @@
+import type { Skill } from "#shared/types";
+
+export default defineEventHandler((): Skill[] => {
+  return [
+    {
+      id: "1",
+      name: "commit",
+      description: "Generates a conventional git commit from staged changes.",
+      status: "active",
+      category: "Git",
+      serverIds: ["1"],
+    },
+    {
+      id: "2",
+      name: "review-pr",
+      description: "Reviews an open pull request and summarises risk.",
+      status: "active",
+      category: "Git",
+      serverIds: ["2"],
+    },
+    {
+      id: "3",
+      name: "figma-implement-design",
+      description: "Translates a Figma node into production-ready Vue code.",
+      status: "active",
+      category: "Design",
+      serverIds: ["8"],
+    },
+    {
+      id: "4",
+      name: "apply-figma-design-system",
+      description: "Reads a Figma design kit and applies tokens to the project.",
+      status: "active",
+      category: "Design",
+      serverIds: ["8"],
+    },
+    {
+      id: "5",
+      name: "db-query",
+      description: "Runs a read-only SQL query and formats the result.",
+      status: "active",
+      category: "Database",
+      serverIds: ["3"],
+    },
+    {
+      id: "6",
+      name: "send-slack",
+      description: "Posts a formatted message to a Slack channel.",
+      status: "active",
+      category: "Messaging",
+      serverIds: ["4"],
+    },
+    {
+      id: "7",
+      name: "web-research",
+      description: "Searches the web and synthesises findings into a report.",
+      status: "active",
+      category: "Research",
+      serverIds: ["5"],
+    },
+    {
+      id: "8",
+      name: "screenshot-page",
+      description: "Takes a screenshot of a URL and saves it locally.",
+      status: "active",
+      category: "Browser",
+      serverIds: ["7"],
+    },
+    {
+      id: "9",
+      name: "changelog",
+      description: "Generates a changelog from git history for a date range.",
+      status: "draft",
+      category: "Git",
+      serverIds: ["1", "2"],
+    },
+    {
+      id: "10",
+      name: "memory-save",
+      description: "Persists a structured note to long-term memory.",
+      status: "disabled",
+      category: "Memory",
+      serverIds: ["6"],
+    },
+  ];
+});
