@@ -16,3 +16,5 @@ Nuxt 4 dashboard project configured for Claude Code-first development.
 3. `/build-dashboard`
 4. `/test-dashboard`
 5. `/review-dashboard`
+
+This project is now managed by Claude agent.
