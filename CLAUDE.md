@@ -50,6 +50,14 @@ Build these pages:
 - Validate API input when needed.
 - Keep business logic out of page components.
 
+## Git workflow rules
+- NEVER commit directly to the `main` branch.
+- ALWAYS create a new branch before making changes.
+- ALWAYS commit on the new branch.
+- ALWAYS open a Pull Request after committing.
+- DO NOT push directly to protected branches.
+- Use descriptive branch names like `feature/...`, `fix/...`, or `chore/...`.
+
 ## Working style
 Before major implementation:
 1. Read the relevant rules.
@@ -65,6 +73,6 @@ Before major implementation:
 - build if the change is large enough
 
 ## Important
-Use the skills in `.claude/skills/` when they match the task.
-Use hooks and rules as enforcement layers, not as documentation substitutes.
-Use docs for human-readable context and examples.
+- Use the skills in `.claude/skills/` when they match the task.
+- Use hooks and rules as enforcement layers, not as documentation substitutes.
+- Use docs for human-readable context and examples.
